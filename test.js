@@ -22,7 +22,19 @@ describe('Test read api', function(){
             .expect(200)
             .end(function(err, res) {
                 if (err) return done(err);
-                assert.equal(typeof res.body, 'number');
+                assert.equal(typeof res.body.count, 'number');
+                done(); 
+            });
+    })
+
+    it('Sto aggiungendo gli utenti', function(done){
+        request(app)
+            .post('/users?token=2')
+            .set('Accept', 'application/json')
+            .send({name: 'Carlo', surname: 'Leonardi'})
+            .expect(201)
+            .end(function(err, res) {
+                if (err) return done(err);
                 done(); 
             });
     })
@@ -32,7 +44,7 @@ describe('Test read api', function(){
             .post('/users')
             .set('Accept', 'application/json')
             .send({name: 'Carlo', surname: 'Leonardi'})
-            .expect(201)
+            .expect(401)
             .end(function(err, res) {
                 if (err) return done(err);
                 done(); 
