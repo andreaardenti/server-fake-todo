@@ -1,0 +1,23 @@
+{
+  "name": "serverfakeuser9",
+  "version": "1.0.0",
+  "description": "\"A simple Fake User Server with Express and fakeuser9\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "Users",
+    "Fake",
+    "Server"
+  ],
+  "author": "Carlo Leonardi <carloleonardi83@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "fakeuser9": "^1.0.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  }
+}
