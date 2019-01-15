@@ -1,7 +1,7 @@
 {
-  "name": "serverfakeuser9",
+  "name": "server-fake-todo",
   "version": "1.0.0",
-  "description": "\"A simple Fake User Server with Express and fakeuser9\"",
+  "description": "\"A simple Fake Todo Server with Express and fakeuser9\"",
   "main": "app.js",
   "scripts": {
     "build": "npm install",
