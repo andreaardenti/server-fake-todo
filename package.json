@@ -4,6 +4,11 @@
   "description": "\"A simple Fake User Server with Express and fakeuser9\"",
   "main": "app.js",
   "scripts": {
+    "build": "npm install",
+    "prestart": "npm run build",
+    "prerestart": "npm run build",
+    "start": "node app",
+    "start-dev": "node app",
     "test": "mocha"
   },
   "keywords": [
