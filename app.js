@@ -5,7 +5,6 @@ var app = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(cors());
 
 var todos = require('./routes/todos');
 app.use('/todos', todos);
