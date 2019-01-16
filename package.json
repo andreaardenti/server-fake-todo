@@ -20,6 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "fakeuser9": "^1.0.0",
     "supertest": "^3.3.0"
